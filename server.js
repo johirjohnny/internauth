@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //MY Code for get the posted data 
 // app.use("/api", baseRouter);
-app.use("/api/auth", authRoute);
+app.use("/auth", authRoute);
 // Boot express server
 app.listen(PORT, () => {
   console.log(`Server Booted at PORT ${PORT}`);
